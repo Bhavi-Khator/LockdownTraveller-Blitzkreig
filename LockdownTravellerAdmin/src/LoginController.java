@@ -49,8 +49,6 @@ public class LoginController implements Initializable {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            LandingPageController landingPageController = landingPage.getController();
-            landingPageController.initData(adminLoginResponse.getAdminID());
         }
     }
 }

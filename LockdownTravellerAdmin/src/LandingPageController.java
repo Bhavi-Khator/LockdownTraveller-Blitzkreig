@@ -16,10 +16,8 @@ public class LandingPageController {
             removeTrainsHyperlink,
             modifySeatsHyperlink,
             cancelTrainsHyperlink,
-            rerouteTrainHyperlink,
-            bookHyperlink;
+            rerouteTrainHyperlink;
 
-    private String adminID = "";
     public void maintainCustomer(ActionEvent actionEvent) {
         System.out.println("maintain customer info clicked");
         MaintainCustomerRequest maintainCustomerRequest = new MaintainCustomerRequest();
@@ -145,23 +143,5 @@ public class LandingPageController {
         RerouteTrainController rerouteTrainController = loader.getController();
         rerouteTrainController.typeComboBox.getItems().setAll("Insert new station at the end.",
                 "Replace the current station with new station");
-    }
-
-    public void bookTickets(ActionEvent actionEvent) {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("DisplayTrains.fxml"));
-        Stage stage = (Stage) maintainCustomerHyperlink.getScene().getWindow();
-        Scene newScene = null;
-        try {
-            newScene = new Scene(loader.load());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        stage.setScene(newScene);
-        stage.setTitle("Reroute Train");
-        DisplayTrainsController displayTrainsController = loader.getController();
-        displayTrainsController.initData(addTrainsHyperlink.getScene(), adminID);
-    }
-    public void initData(String adminID) {
-        this.adminID = adminID;
     }
 }

@@ -12,8 +12,7 @@ public class RerouteTrainController {
     @FXML
     public TextField trianIdTextfield, newStationTextfield, arrivalTextfield, departureTextfield, dayTextfield,
             cityCodeTextfield, currentDistanceTextfield, previousDistanceTextfield, nextDistanceTextfield,
-            currentStationTextfield, previousStationTextfield, nextStationTextfield, nextStationArrival,
-            currentStationDeparture;
+            currentStationTextfield, previousStationTextfield, nextStationTextfield;
     @FXML
     public ComboBox<String> typeComboBox;
     @FXML
@@ -39,24 +38,15 @@ public class RerouteTrainController {
     }
 
     public void sendRequest(ActionEvent actionEvent) {
-//        RerouteRequest rerouteRequest = new RerouteRequest(
-//                DateTimeFormatter.ofPattern("dd/MM/yyyy").format(dateDatePicker.getValue()),
-//                trianIdTextfield.getText(), newStationTextfield.getText(), arrivalTextfield.getText(),
-//                departureTextfield.getText(), cityCodeTextfield.getText(), Integer.parseInt(dayTextfield.getText()),
-//                Integer.parseInt(previousDistanceTextfield.getText()),
-//                Integer.parseInt(currentDistanceTextfield.getText()), Integer.parseInt(nextDistanceTextfield.getText()),
-//                currentStationTextfield.getText(), previousStationTextfield.getText(), nextStationTextfield.getText(),
-//                typeComboBox.getValue().equals("Replace the current station with new station"));
-//
         RerouteRequest rerouteRequest = new RerouteRequest(
                 DateTimeFormatter.ofPattern("dd/MM/yyyy").format(dateDatePicker.getValue()),
-                trianIdTextfield.getText(), newStationTextfield.getText(), cityCodeTextfield.getText(),
-                Integer.parseInt(previousDistanceTextfield.getText()), Integer.parseInt(currentDistanceTextfield.getText()),
-                Integer.parseInt(nextDistanceTextfield.getText()), currentStationTextfield.getText(),
-                previousStationTextfield.getText(), nextStationTextfield.getText(),
-                typeComboBox.getValue().equals("Replace the current station with new station"), arrivalTextfield.getText(),
-                departureTextfield.getText(), nextStationArrival.getText(), currentStationDeparture.getText(),
-                Integer.parseInt(dayTextfield.getText()));
+                trianIdTextfield.getText(), newStationTextfield.getText(), arrivalTextfield.getText(),
+                departureTextfield.getText(), cityCodeTextfield.getText(), Integer.parseInt(dayTextfield.getText()),
+                Integer.parseInt(previousDistanceTextfield.getText()),
+                Integer.parseInt(currentDistanceTextfield.getText()), Integer.parseInt(nextDistanceTextfield.getText()),
+                currentStationTextfield.getText(), previousStationTextfield.getText(), nextStationTextfield.getText(),
+                typeComboBox.getValue().equals("Replace the current station with new station"));
+
         System.out.println(dateDatePicker.getValue().toString());
         Main.SendRequest(rerouteRequest);
         RerouteResponse rerouteResponse = (RerouteResponse) Main.ReceiveResponse();
