@@ -30,7 +30,11 @@ Admin:
 12. Add and remove trains.
 13. Add and remove seats/Coaches in trains.
 14. Cancel trains.
+
+
+
 ###_Advanced features :_
+
 The features implemented are:
 1. Admin can give discounts to frequent travellers e.g. give a discount to travellers
 who booked tickets worth X rupees in a given month will receive a discount for
