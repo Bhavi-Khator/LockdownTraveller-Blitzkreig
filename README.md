@@ -22,6 +22,7 @@ passenger details and request to book tickets.
 
 
 Admin:
+
 8. Maintain customer information.
 9. Maintain trains information(source, destination, time, stops etc).
 10. Book seats and send tickets to users.
