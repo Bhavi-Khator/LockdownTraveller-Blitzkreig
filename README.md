@@ -7,7 +7,7 @@ events. Not so friendly sponsors need to meet him in person. Being really scared
 flights, trains are his only hope. Being overwhelmed with responsibility he needs your
 help to plan his journeys and book his travels
 
-###Basic Features:
+###_Basic Features:_
 All the following features have been implemented
 
 User:
@@ -29,7 +29,7 @@ Admin:
 12. Add and remove trains.
 13. Add and remove seats/Coaches in trains.
 14. Cancel trains.
-###Advanced features :
+###_Advanced features :_
 The features implemented are:
 1. Admin can give discounts to frequent travellers e.g. give a discount to travellers
 who booked tickets worth X rupees in a given month will receive a discount for
