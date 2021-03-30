@@ -1,11 +1,5 @@
 # LockdownTraveller-Blitzkreig
-Avishkar in Covid seemed an impossible task with an online semester, ongoing
-placements and never ending lockdown. Anuj being the leader he is started managing it
-all, be it scheduling classes or planning events he is all over the place. As Avishkar
-approaches he is getting more and more desperate to bring in new sponsors for all
-events. Not so friendly sponsors need to meet him in person. Being really scared of
-flights, trains are his only hope. Being overwhelmed with responsibility he needs your
-help to plan his journeys and book his travels
+Lockdown traveller is a program inspired by IRCTC written using Java for backend, JavaFX for frontend, and MySQL for database. It has the features of booking, cancelling and rerouting. 
 
 ###_Basic Features:_
 All the following features have been implemented
